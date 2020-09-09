@@ -8,9 +8,22 @@
 </head>
 <body class="container mt-4">
 
+    <div id="app">
+        <h2>{{ name }}</h2>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/0.3.6/popper.min.js" integrity="sha512-F0fWDU3Gvp/QLynpmYyxbhq8ldkRijaBS1zEARVZmql107k/o8VL6auTHYpWmtwGbTmidWrN/GpJqru8xIbA0w==" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.min.js"></script>
 </body>
+<script>
+    console.log('app loaded');
+    var app = new Vue({
+        el: '#app',
+        data: {
+            name: 'Bamboo Thermal Ski Coat'
+        }
+    });
+</script>
 </html>
